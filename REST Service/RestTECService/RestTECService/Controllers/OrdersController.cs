@@ -14,16 +14,35 @@ namespace RestTECService.Controllers
     {
         // GET: api/<ValuesController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Order> Get()
         {
-            return new string[] { "value1", "value2" };
+            var Orders = new List<Order>();
+            for (int i = 1; i <= 3; i++)
+            {
+                var order = new Order
+                {
+                    Id = i,
+                    AssignTo = "unassigned",
+                    EstimatedTime = 12 / i
+
+                };
+                Orders.Add(order);
+            }
+            return Orders;
         }
 
         // GET api/<ValuesController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Order Get(int id)
         {
-            return "value";
+            var order = new Order
+            {
+                Id = id,
+                AssignTo = "unassigned",
+                EstimatedTime = 12 / id
+
+            };
+            return order;
         }
 
         // POST api/<ValuesController>

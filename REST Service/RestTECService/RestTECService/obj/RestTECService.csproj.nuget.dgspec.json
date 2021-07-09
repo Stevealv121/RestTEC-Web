@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Steve\\Projects\\Practice\\RestTEC\\REST Service\\RestTECService\\RestTECService\\RestTECService.csproj": {}
+    "C:\\Users\\Steve\\Projects\\Practice\\RestTEC\\Web Service\\RestTEC-Web\\REST Service\\RestTECService\\RestTECService\\RestTECService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Steve\\Projects\\Practice\\RestTEC\\REST Service\\RestTECService\\RestTECService\\RestTECService.csproj": {
+    "C:\\Users\\Steve\\Projects\\Practice\\RestTEC\\Web Service\\RestTEC-Web\\REST Service\\RestTECService\\RestTECService\\RestTECService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Steve\\Projects\\Practice\\RestTEC\\REST Service\\RestTECService\\RestTECService\\RestTECService.csproj",
+        "projectUniqueName": "C:\\Users\\Steve\\Projects\\Practice\\RestTEC\\Web Service\\RestTEC-Web\\REST Service\\RestTECService\\RestTECService\\RestTECService.csproj",
         "projectName": "RestTECService",
-        "projectPath": "C:\\Users\\Steve\\Projects\\Practice\\RestTEC\\REST Service\\RestTECService\\RestTECService\\RestTECService.csproj",
+        "projectPath": "C:\\Users\\Steve\\Projects\\Practice\\RestTEC\\Web Service\\RestTEC-Web\\REST Service\\RestTECService\\RestTECService\\RestTECService.csproj",
         "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Steve\\Projects\\Practice\\RestTEC\\REST Service\\RestTECService\\RestTECService\\obj\\",
+        "outputPath": "C:\\Users\\Steve\\Projects\\Practice\\RestTEC\\Web Service\\RestTEC-Web\\REST Service\\RestTECService\\RestTECService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
