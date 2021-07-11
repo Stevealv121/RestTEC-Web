@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RestTECService.Data
+namespace RestTECService.Models
 {
-    public class Class
+    public class Chef : User
     {
     }
 }
