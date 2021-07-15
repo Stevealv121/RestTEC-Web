@@ -2,11 +2,15 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using RestTEC.Core.Interfaces;
+using RestTEC.Infrastructure.Data;
+using RestTEC.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,10 +32,18 @@ namespace RestTEC.Api
         {
 
             services.AddControllers();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RestTEC.Api", Version = "v1" });
             });
+
+            //DB connection
+            services.AddDbContext<RestTECContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("RestTEC")));
+
+            services.AddTransient<IDishRepository, DishMongoRepository>();
+            services.AddTransient<IMenuRepository, MenuRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

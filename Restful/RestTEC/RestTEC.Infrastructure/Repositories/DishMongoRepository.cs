@@ -8,24 +8,23 @@ using System.Threading.Tasks;
 
 namespace RestTEC.Infrastructure.Repositories
 {
-    public class DishRepository : IDishRepository
+    public class DishMongoRepository : IDishRepository
     {
         public async Task<IEnumerable<Dish>> GetDishes()
         {
             var dishes = Enumerable.Range(1, 10).Select(x => new Dish
             {
                 DishId = x,
-                Name = $"Name {x}",
-                Description = $"Description {x}",
+                Name = $"Name Mongo {x}",
+                Description = $"Description Mongo {x}",
                 Price = x * 2,
                 Calories = x * 3,
-                Type = $"Type {x}"
+                Type = $"Type Mongo {x}"
             });
 
             await Task.Delay(10);
 
             return dishes;
         }
-
     }
 }

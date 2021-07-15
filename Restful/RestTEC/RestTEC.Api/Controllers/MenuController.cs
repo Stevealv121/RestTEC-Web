@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RestTEC.Core.Interfaces;
-using RestTEC.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,18 +10,18 @@ namespace RestTEC.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DishesController : ControllerBase
+    public class MenuController : ControllerBase
     {
-        private readonly IDishRepository _dishRepository;
-        public DishesController(IDishRepository dishRepository)
+        private readonly IMenuRepository _menuRepository;
+        public MenuController(IMenuRepository menuRepository)
         {
-            _dishRepository = dishRepository;
+            _menuRepository = menuRepository;
         }
         [HttpGet]
         public async Task<IActionResult> GetDishes()
         {
-            var dishes = await _dishRepository.GetDishes();
-            return Ok(dishes);
+            var menu = await _menuRepository.GetDishes();
+            return Ok(menu);
         }
     }
 }
