@@ -13,6 +13,10 @@ import { ReportsComponent } from './reports/reports.component';
 import { LoginChefComponent } from './login-chef/login-chef.component';
 import { AssignOrdersComponent } from './assign-orders/assign-orders.component';
 import { OrdersControlComponent } from './orders-control/orders-control.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule }  from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,15 @@ import { OrdersControlComponent } from './orders-control/orders-control.componen
     ReportsComponent,
     LoginChefComponent,
     AssignOrdersComponent,
-    OrdersControlComponent
+    OrdersControlComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

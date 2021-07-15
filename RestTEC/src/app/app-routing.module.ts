@@ -10,6 +10,7 @@ import { LoginChefComponent } from './login-chef/login-chef.component';
 import { MenuComponent } from './menu/menu.component';
 import { OrdersControlComponent } from './orders-control/orders-control.component';
 import { ReportsComponent } from './reports/reports.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
   {path: "", pathMatch: "full",redirectTo: "/home"},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: "menu", component: MenuComponent},
   {path: "orders-control", component: OrdersControlComponent},
   {path: "reports", component: ReportsComponent},
+  {path: "sign-up", component: SignUpComponent},
 ];
 
 @NgModule({

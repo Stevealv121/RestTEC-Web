@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestTEC.Core", "RestTEC.Core\RestTEC.Core.csproj", "{AAACC01D-25A1-49F6-8D01-196FA948AD34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestTEC.Infrastructure", "RestTEC.Infrastructure\RestTEC.Infrastructure.csproj", "{CA9C0C40-2498-42BD-A814-BA75695E62AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestTEC.Api", "RestTEC.Api\RestTEC.Api.csproj", "{337DCBF2-B105-4E25-8500-1A0A51A864FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BE13468B-DFAD-4970-B4EB-E0AA1FDE39D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestTEC.UnitTests", "RestTEC.UnitTests\RestTEC.UnitTests.csproj", "{FC86381B-C792-485C-93E0-026080B4FB38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestTEC.IntegrationTests", "RestTEC.IntegrationTests\RestTEC.IntegrationTests.csproj", "{828A2EC6-C612-438F-A968-A86305820FF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAACC01D-25A1-49F6-8D01-196FA948AD34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAACC01D-25A1-49F6-8D01-196FA948AD34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAACC01D-25A1-49F6-8D01-196FA948AD34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAACC01D-25A1-49F6-8D01-196FA948AD34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA9C0C40-2498-42BD-A814-BA75695E62AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9C0C40-2498-42BD-A814-BA75695E62AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9C0C40-2498-42BD-A814-BA75695E62AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9C0C40-2498-42BD-A814-BA75695E62AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{337DCBF2-B105-4E25-8500-1A0A51A864FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337DCBF2-B105-4E25-8500-1A0A51A864FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337DCBF2-B105-4E25-8500-1A0A51A864FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337DCBF2-B105-4E25-8500-1A0A51A864FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC86381B-C792-485C-93E0-026080B4FB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC86381B-C792-485C-93E0-026080B4FB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC86381B-C792-485C-93E0-026080B4FB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC86381B-C792-485C-93E0-026080B4FB38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828A2EC6-C612-438F-A968-A86305820FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828A2EC6-C612-438F-A968-A86305820FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828A2EC6-C612-438F-A968-A86305820FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828A2EC6-C612-438F-A968-A86305820FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC86381B-C792-485C-93E0-026080B4FB38} = {BE13468B-DFAD-4970-B4EB-E0AA1FDE39D7}
+		{828A2EC6-C612-438F-A968-A86305820FF0} = {BE13468B-DFAD-4970-B4EB-E0AA1FDE39D7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {678EA9AB-2D45-4824-9A0A-865B98F314EC}
+	EndGlobalSection
+EndGlobal
