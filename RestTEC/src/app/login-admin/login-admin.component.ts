@@ -13,13 +13,20 @@ export class LoginAdminComponent implements OnInit {
 
   loginForm = new FormGroup({
     email : new FormControl('',Validators.required),
-    password : new FormControl('',Validators.required)
+    password : new FormControl('',Validators.required),
+    access : new FormControl('Admin',Validators.required)
   })
 
   constructor(private api:ApiService) { }
 
   ngOnInit(): void {
   }
+
+  // checkLocalStorage(){
+  //   if(true){
+  //     this.router.navigate([''])
+  //   }
+  // }
 
   onLogin(form: LoginI){
     this.api.loginByEmail(form).subscribe(data =>{

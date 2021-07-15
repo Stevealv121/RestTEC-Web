@@ -1,9 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using RestTEC.Core.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace RestTEC.Api.Controllers
@@ -17,6 +13,7 @@ namespace RestTEC.Api.Controllers
         {
             _menuRepository = menuRepository;
         }
+
         [HttpGet]
         public async Task<IActionResult> GetDishes()
         {

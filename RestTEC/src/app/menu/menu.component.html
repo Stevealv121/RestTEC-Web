@@ -1,1 +1,25 @@
-<p>menu works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <!--<th scope="col">#</th>
+        <th scope="col">Dish</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Calories</th>
+        <th scope="col">Type</th>-->
+        <th scope="col" *ngFor="let column of headers">
+            {{column}}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dish of menu">
+        <th scope="row">{{ dish.id }}</th>
+        <td>{{ dish.name }}</td>
+        <td>{{ dish.description }}</td>
+        <td>{{ dish.price }}</td>
+        <td>{{ dish.calories }}</td>
+        <td>{{ dish.type }}</td>
+      </tr>
+    </tbody>
+  </table>

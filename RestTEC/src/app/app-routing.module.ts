@@ -11,6 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { OrdersControlComponent } from './orders-control/orders-control.component';
 import { ReportsComponent } from './reports/reports.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   {path: "", pathMatch: "full",redirectTo: "/home"},
@@ -28,7 +29,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [CommonModule,RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
