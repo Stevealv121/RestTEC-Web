@@ -7,5 +7,7 @@ namespace RestTEC.Core.Interfaces
     public interface IMenuRepository
     {
         Task<IEnumerable<Menu>> GetDishes();
+
+        Task InsertDish(Menu menu);
     }
 }

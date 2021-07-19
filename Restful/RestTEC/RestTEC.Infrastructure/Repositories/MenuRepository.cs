@@ -22,5 +22,12 @@ namespace RestTEC.Infrastructure.Repositories
             return menu;
         }
 
+        public async Task InsertDish(Menu menu)
+        {
+            _context.Menus.Add(menu);
+            await _context.SaveChangesAsync();
+
+        }
+
     }
 }
