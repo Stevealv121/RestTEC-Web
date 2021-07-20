@@ -3,6 +3,7 @@ import { ApiService } from '../services/api.service';
 import { Router } from '@angular/router';
 import { MenuI } from '../models/menu.interface';
 import { Observable, of } from 'rxjs';
+import { DataI } from '../models/data.interface';
 
 @Component({
   selector: 'app-menu',
@@ -11,7 +12,8 @@ import { Observable, of } from 'rxjs';
 })
 export class MenuComponent implements OnInit {
 
-  menu: MenuI[] = [];
+  menu : MenuI[] = [];
+  data!: DataI;
 
   headers = ["#", "Name", "Description", "Price", "Calories", "Type"]
 
@@ -19,9 +21,18 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.api.getMenu().subscribe(data =>{
-      this.menu = data;
+      this.data = data;
+      this.menu = this.data.data;
       console.log(this.menu);
     })
+  }
+
+  editMenu(id:number){
+    this.router.navigate(['edit-menu',id]);
+  }
+
+  newDish(){
+    this.router.navigate(['new-dish']);
   }
 
 }

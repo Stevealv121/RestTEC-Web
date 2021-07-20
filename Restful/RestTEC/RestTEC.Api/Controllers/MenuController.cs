@@ -25,6 +25,14 @@ namespace RestTEC.Api.Controllers
             return Ok(response);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetDish(int id)
+        {
+            var dish = await _menuRepository.GetDish(id);
+            var response = new ApiResponse<Menu>(dish);
+            return Ok(response);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Dish(Menu menu)
         {

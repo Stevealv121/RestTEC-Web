@@ -1,19 +1,17 @@
+<h3>Menu</h3>
+<br>
+<button type="button" class="btn btn-primary" (click)="newDish()">Add Dish</button>
+<br>
 <table class="table">
     <thead>
       <tr>
-        <!--<th scope="col">#</th>
-        <th scope="col">Dish</th>
-        <th scope="col">Description</th>
-        <th scope="col">Price</th>
-        <th scope="col">Calories</th>
-        <th scope="col">Type</th>-->
         <th scope="col" *ngFor="let column of headers">
             {{column}}
         </th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let dish of menu">
+      <tr *ngFor="let dish of menu" (click)="editMenu(dish.id)">
         <th scope="row">{{ dish.id }}</th>
         <td>{{ dish.name }}</td>
         <td>{{ dish.description }}</td>

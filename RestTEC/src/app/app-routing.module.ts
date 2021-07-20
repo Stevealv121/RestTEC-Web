@@ -12,6 +12,8 @@ import { OrdersControlComponent } from './orders-control/orders-control.componen
 import { ReportsComponent } from './reports/reports.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { CommonModule } from '@angular/common';
+import { EditMenuComponent } from './edit-menu/edit-menu.component';
+import { NewDishComponent } from './new-dish/new-dish.component';
 
 const routes: Routes = [
   {path: "", pathMatch: "full",redirectTo: "/home"},
@@ -26,6 +28,8 @@ const routes: Routes = [
   {path: "orders-control", component: OrdersControlComponent},
   {path: "reports", component: ReportsComponent},
   {path: "sign-up", component: SignUpComponent},
+  {path: "edit-menu/:id", component: EditMenuComponent},
+  {path: "new-dish", component: NewDishComponent},
 ];
 
 @NgModule({

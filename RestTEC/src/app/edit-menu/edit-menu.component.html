@@ -1,0 +1,32 @@
+<div class="container">
+    <form [formGroup]="editForm" (ngSubmit)="postForm(editForm.value)">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Id</label>
+            <input type="text" class="form-control" placeholder="Id" formControlName="id">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="text" class="form-control" placeholder="Dish name" formControlName="name">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Description</label>
+            <input type="text" class="form-control" placeholder="Details..." formControlName="description">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Price</label>
+            <input type="text" class="form-control" placeholder="Price" formControlName="price">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Calories</label>
+            <input type="text" class="form-control" placeholder="Calories" formControlName="calories">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Type</label>
+            <input type="text" class="form-control" placeholder="Type" formControlName="type">
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-danger" (click)="delete()">Delete</button>
+        <button type="button" class="btn btn-dark" (click)="leave()">Leave</button>
+    </form>
+</div>

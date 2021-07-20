@@ -17,6 +17,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule }  from '@angular/forms';
+import { EditMenuComponent } from './edit-menu/edit-menu.component';
+import { NewDishComponent } from './new-dish/new-dish.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ReactiveFormsModule, FormsModule }  from '@angular/forms';
     LoginChefComponent,
     AssignOrdersComponent,
     OrdersControlComponent,
-    SignUpComponent
+    SignUpComponent,
+    EditMenuComponent,
+    NewDishComponent
   ],
   imports: [
     BrowserModule,
